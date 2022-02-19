@@ -1,4 +1,14 @@
-document.getElementById("demo").innerHTML = "Musculação";
+function musculacao() {
+  document.getElementById("demo").innerHTML = "Musculação";
+  console.log("deu certo");
+}
+
+
+
+
+function adicionarAoCarinho() {
+  /* Algoritmo de adicionar ao carrinho*/
+} 
 
 /* Adicionado ao carrinho */
 var chartAdd = [];
