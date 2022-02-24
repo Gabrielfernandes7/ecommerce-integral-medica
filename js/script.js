@@ -1,27 +1,26 @@
-function musculacao() {
-  document.getElementById("demo").innerHTML = "Musculação";
-  console.log("deu certo");
+var product[];
+
+// Add cart
+function fun(){
+  var x = {};
+  x.price = document.getElementById('price').value;
+  x.title = document.getElementById('title').value;
+  product.push(x);
+
+  var iDiv = document.createElement('div');
+  iDiv.id = product.length;
+  iDiv.className = 'block';
+  document.getElementsByTagName('body')[0].appendChild(iDiv);
+
+  var para = document.createElement("span");
+  var node = document.createTextNode('Title: ' + x.title+' |                    ');
+  para.appendChild(node);
+
+  var element = document.getElementById(product.length);
+  element.appendChild(para);
+
+  para = document.createElement("span");
+  node = document.createTextNode('Price: ' + x.price);
+
+  element.appendChild(para);
 }
-
-
-
-
-function adicionarAoCarinho() {
-  /* Algoritmo de adicionar ao carrinho*/
-} 
-
-/* Adicionado ao carrinho */
-var chartAdd = [];
-
-/* Dropdown */
-/*
-$(function () {
-    $('.dropdown-toggle').dropdown();
-});
-
-$('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-});
-*/
