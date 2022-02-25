@@ -43,13 +43,18 @@
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                     <input type="search" class="form-control form-control-dark" placeholder="Search..."
-                        aria-label="Search">
+                        aria-label="Search" list="produtos">
+                    <datalist id="produtos">
+                        <option value="Creatina"></option>
+                        <option value="Whey"></option>
+                        <option value="Hipercaloricos"></option>
+                    </datalist>
                 </form>
 
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2"><a href="/html/login.html" class="login">Login</a></button>
-                    <button type="button" class="btn btn-outline-light me-2">Sign-up</button>
-                    <button type="button" class="btn btn-outline-light bi bi-cart me-2"></button>
+                    <a href="/html/login.html" class="login"><button type="button" class="btn btn-light me-2">Login</button></a>
+                    <a href="/html/card.html"><button type="button" class="btn btn-light me-2">Sign-up</button></a>
+                    <button type="button" class="btn btn-light bi bi-cart me-2"></button>
                 </div>
             </div>
         </div>
@@ -74,7 +79,7 @@
                     <h5 class="card-title"> Card title </h5>
                     <p class="card-text"> Suplementos de qualidade </p>
                     <h5 class="preco"> R$ 40.50 </h5>
-                    <a href="#" class="btn btn-outline-dark">Adicionar ao carrinho <i class="bi bi-cart-plus"></i></a>
+                    <a href="#" class="btn btn-outline-dark" onclick="addCart()">Adicionar ao carrinho <i class="bi bi-cart-plus"></i></a>
                 </div>
             </div>
             <div class="card">
@@ -136,6 +141,10 @@
                 <p><a class="btn btn-danger" href="#">Veja detalhes &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
+    </div>
+
+    <!-- Promoções -->
+
 
     <hr class="featurette-divider">
 

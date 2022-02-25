@@ -1,7 +1,5 @@
-var product[];
-
 // Add cart
-function fun(){
+function addCart(){
   var x = {};
   x.price = document.getElementById('price').value;
   x.title = document.getElementById('title').value;
@@ -13,7 +11,7 @@ function fun(){
   document.getElementsByTagName('body')[0].appendChild(iDiv);
 
   var para = document.createElement("span");
-  var node = document.createTextNode('Title: ' + x.title+' |                    ');
+  var node = document.createTextNode('Title: ' + x.title + ' |                    ');
   para.appendChild(node);
 
   var element = document.getElementById(product.length);

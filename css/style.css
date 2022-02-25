@@ -6,9 +6,6 @@
     padding: 0;
 }
 
-a.link {
-    text-decoration: none;
-}
 
 body{
     padding-top: 0rem;
@@ -31,7 +28,7 @@ body{
     margin-left: .75rem;
 }
 
-.login{
+a.login{
     text-decoration: none;
     color: black;
 }
