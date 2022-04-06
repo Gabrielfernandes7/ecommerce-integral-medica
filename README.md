@@ -5,3 +5,16 @@
 
 # Site para acessar
     https://suplemento-commerce.netlify.app/
+
+<style>
+    .observacao{
+        color: #dc3545;
+    }
+</style>
+
+# Página inicial do site: :muscle:
+
+<img src="./img/readme-img/pagina_da_web.png">
+
+## Será dividido em marketing, produtos, promoções e formas de pagamento.
+### <p class = "observacao"> O front-end está sendo desenvolvido para que, posteriormente, o bak-end seja desenvolvido e, por fim, integrados </p>
