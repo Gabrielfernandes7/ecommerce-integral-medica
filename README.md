@@ -12,6 +12,6 @@
 
 <img src="./img/readme-img/pagina_da_web.png">
 
-## Será dividido em marketing, produtos, promoções e formas de pagamento.
+### Será dividido em marketing, produtos, promoções e formas de pagamento.
 
 ### O front-end está sendo desenvolvido para que, posteriormente, o bak-end seja desenvolvido e, por fim, integrados
