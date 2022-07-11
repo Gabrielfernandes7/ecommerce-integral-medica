@@ -1,24 +1,15 @@
-// Add cart
-function addCart(){
-  var x = {};
-  x.price = document.getElementById('price').value;
-  x.title = document.getElementById('title').value;
-  product.push(x);
+let floatingInput = document.getElementById('floatingInput');
+let floatingPassword = document.getElementById('floatingPassword');
+let button = document.getElementById('button');
 
-  var iDiv = document.createElement('div');
-  iDiv.id = product.length;
-  iDiv.className = 'block';
-  document.getElementsByTagName('body')[0].appendChild(iDiv);
-
-  var para = document.createElement("span");
-  var node = document.createTextNode('Title: ' + x.title + ' |                    ');
-  para.appendChild(node);
-
-  var element = document.getElementById(product.length);
-  element.appendChild(para);
-
-  para = document.createElement("span");
-  node = document.createTextNode('Price: ' + x.price);
-
-  element.appendChild(para);
+function validarDados(input, password) {
+  if (typeof input === 'string' && typeof password === 'string') {
+    console.log('Tudo correto');
+  } else {
+    console.log('A senha ou o usuário está incorreto');
+  }
 }
+
+button.addEventListener('click', () => {
+  validarDados(floatingInput, floatingPassword);
+});
